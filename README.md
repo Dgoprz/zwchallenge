@@ -7,4 +7,4 @@
 - Se añade un loading ya que la API tiene una media aproximada de minutos para cada respuesta, si es que no acaba dando un timeout (asumo que es sabido).
 - Las claves necesarias se envían por correo a Laura para reemplazar en el archivo `.env` antes de la ejecución.
 - Para la ejecución en la carpeta raíz: `npm run dev`.
-- Dado el funcionamiento errático de la API, envió unas consideraciones particulares al correo para probarlo de forma local y evitar así este tedioso proceso.
+- Dado el funcionamiento errático de la API, envió unas consideraciones particulares al correo para probarlo de forma local y evitar así este  proceso tedioso.
