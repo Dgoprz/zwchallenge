@@ -1,0 +1,19 @@
+.search-bar {
+    padding-bottom: 5px;
+    width: 100%
+}
+
+.search-icon {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    text-transform: uppercase;
+    background-color: $bg_color;
+}

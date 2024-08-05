@@ -1,0 +1,20 @@
+$x-small: 354px;
+$small : 519px;
+$medium : 768px;
+$large : 992px;
+$tablet: 1025px;
+$desktop : 1200px;
+
+
+@mixin box-shadow($shadow) {  
+    -webkit-box-shadow: $shadow;  
+    -moz-box-shadow:$shadow;  
+    -o-box-shadow:$shadow;  
+    box-shadow: $shadow;
+}
+
+@mixin mq-max($point : 768px) {
+    @media (max-width:($point - 1px)) {
+        @content;
+    }
+}

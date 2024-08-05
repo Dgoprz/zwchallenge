@@ -1,0 +1,127 @@
+.main-detail {
+    margin-top: 75px;
+    flex-direction: column;
+    border-top: 1px solid $border_1;
+
+    .detail-content {
+        width: 100%;
+
+        .detail-section {
+            padding: 0 200px;
+            background-color: $black;
+            clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%);
+            color: $white;
+            justify-content: center;
+
+            @include mq-max($tablet) {
+                padding: 0;
+            }
+
+            @include mq-max($small) {
+                flex-direction: column;
+                padding-bottom: 20px;
+                justify-content: flex-start
+            }
+
+            .charactImg {
+                width: 27%;
+                max-height: 300px;
+                object-fit: cover;
+
+                @include mq-max($small) {
+                    width: 100%;
+                    //max-width: none;
+                }
+            }
+
+            .description-side {
+                padding: 0 35px;
+                width: 73%;
+                justify-content: center;
+                max-width: 800px;
+
+                @include mq-max($tablet) {
+                    padding: 50px;
+                }
+
+                @include mq-max($small) {
+                    padding: 0 15px;
+                    width: calc(100% - 30px);
+                    height: 30%;
+                    padding-top: 20px;
+                }
+
+                .head {
+                    width: 100%;
+
+                    .name {
+                        font-family: "Roboto-Bold";
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        margin: 10px 0;
+                    }
+
+                    .favIcon {
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                }
+
+                .description {
+                    font-family: "Roboto-Regular";
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .comics-section {
+            padding: 0 200px;
+            margin-top: 10px;
+            gap: 30spx;
+            height: 500px;
+
+            @include mq-max($tablet) {
+                align-items: center;
+                padding: 0 30px;
+            }
+
+            .comicsTitle {
+                font-family: "Roboto-Bold";
+                font-size: 20px;
+                margin: 20px 0 10px;
+
+                @include mq-max($tablet) {
+                    width: 95%;
+                    text-align: left;
+                }
+            }
+
+            .comics-content {
+                display: flex;
+                overflow-x: auto;
+                //width: 100%;
+                max-width: 90%;
+                // height: 40%;
+                padding: 10px;
+
+            }
+
+            .comics-content::-webkit-scrollbar {
+                height: 4px;
+            }
+
+            .comics-content::-webkit-scrollbar-thumb {
+                background-color: red;
+                border-radius: 4px;
+            }
+
+            .comics-content::-webkit-scrollbar-track {
+                background-color: rgb(228, 222, 222);
+                border-radius: 4px;
+            }
+        }
+
+    }
+
+}

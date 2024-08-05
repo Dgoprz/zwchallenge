@@ -1,0 +1,38 @@
+.header{
+    background-color: $black;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    .top-header-area {
+        height: 75px;
+        padding: 0 50px;
+        width: 100%;
+        @include mq-max($small){
+            padding: 0 15px;
+        }
+
+        .logoImg {
+           
+            img {
+                height: 40px;
+                margin-top: 3px;
+            }
+        }
+        .fav-section{
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 25px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            .fav-count{
+                font-size: 15px;
+                color: white;
+                font-family: "Roboto-Regular";
+                
+            }
+        }
+    }
+}

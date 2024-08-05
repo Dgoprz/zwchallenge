@@ -1,0 +1,32 @@
+.main-home {
+    margin: 85px 50px 30px;
+    width: calc(100% - 100px);
+    flex-direction: column;
+    @include mq-max($small){
+        margin: 85px 10px 30px;
+        width: calc(100% - 20px);
+    }
+
+    .home-content {
+        width: 100%;
+        .favoriteTitle{
+            font-family: "Roboto-Bold";
+            font-size: 18px;
+            margin: 30px 0 5px;
+        }
+        .search-section{
+            margin-top: 30px;
+            width: 100%;
+            border-bottom: 1px solid $black;
+        }
+        .resultText{
+            font-family: "Roboto-Medium";
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .card-section{
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}
